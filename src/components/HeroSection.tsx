@@ -6,10 +6,14 @@ const HeroSection = () => {
   return (
     <section className="min-h-screen flex items-center pt-16 relative overflow-hidden">
       {/* Background grid */}
-      <div className="absolute inset-0 opacity-[0.03]" style={{
-        backgroundImage: 'linear-gradient(hsl(var(--foreground)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px)',
-        backgroundSize: '60px 60px',
-      }} />
+      <div
+        className="absolute inset-0 opacity-[0.03]"
+        style={{
+          backgroundImage:
+            "linear-gradient(hsl(var(--foreground)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px)",
+          backgroundSize: "60px 60px",
+        }}
+      />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-12 gap-12 items-center">
@@ -37,8 +41,18 @@ const HeroSection = () => {
               <br />
               <span className="relative">
                 Naguib
-                <svg className="absolute -bottom-2 left-0 w-full" height="8" viewBox="0 0 300 8" fill="none">
-                  <path d="M1 5.5C60 2 120 1 150 3C180 5 240 6.5 299 3" stroke="hsl(var(--primary))" strokeWidth="3" strokeLinecap="round"/>
+                <svg
+                  className="absolute -bottom-2 left-0 w-full"
+                  height="8"
+                  viewBox="0 0 300 8"
+                  fill="none"
+                >
+                  <path
+                    d="M1 5.5C60 2 120 1 150 3C180 5 240 6.5 299 3"
+                    stroke="hsl(var(--primary))"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                  />
                 </svg>
               </span>
             </motion.h1>
@@ -49,9 +63,11 @@ const HeroSection = () => {
               transition={{ delay: 0.5 }}
               className="text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed"
             >
-              I turn complex designs into{" "}
-              <span className="text-foreground font-medium">pixel-perfect</span>,{" "}
-              production-ready React applications. Clean code. Zero compromises.
+              You bring the vision, I build the experience.
+              <span className="text-foreground font-medium">
+                I am an end-to-end web developer who turns your concepts into
+                production-ready websites
+              </span>
             </motion.p>
 
             <motion.div
@@ -80,13 +96,26 @@ const HeroSection = () => {
               transition={{ delay: 0.8 }}
               className="flex items-center gap-5 pt-4"
             >
-              <a href="https://github.com/Gerges-GN" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a
+                href="https://github.com/Gerges-GN"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
                 <Github size={20} />
               </a>
-              <a href="https://linkedin.com/in/gerges-naguib" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a
+                href="https://linkedin.com/in/gerges-naguib"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
                 <Linkedin size={20} />
               </a>
-              <a href="mailto:gerges.naguib.dev@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a
+                href="mailto:gerges.naguib.dev@gmail.com"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
                 <Mail size={20} />
               </a>
             </motion.div>

@@ -18,7 +18,9 @@ const AboutSection = () => {
           >
             <div className="flex items-center gap-3 mb-4">
               <span className="section-marker" />
-              <span className="text-sm font-medium tracking-widest uppercase text-muted-foreground">About</span>
+              <span className="text-sm font-medium tracking-widest uppercase text-muted-foreground">
+                About
+              </span>
             </div>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground leading-tight">
               Precision is
@@ -34,15 +36,23 @@ const AboutSection = () => {
             className="lg:col-span-8 space-y-6"
           >
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a Cairo-based frontend developer who believes every pixel matters. I don't just write code—I architect interfaces that feel intentional, performant, and built to last.
+              I'm a Cairo-based frontend developer who believes every pixel
+              matters. I don't just write code - I architect interfaces that
+              feel intentional, performant, and built to last.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              My approach is simple: understand the design deeply, question every assumption, then execute with surgical precision. Whether it's a complex booking system or a high-conversion e-commerce UI, I treat every component as a product decision.
+              My approach is simple: You bring the vision, I build the
+              experience. I am an end-to-end web developer who turns your
+              concepts into production-ready websites and handles everything
+              from the first visual mockup to the final line of code.
             </p>
 
             <div className="grid sm:grid-cols-3 gap-6 pt-8">
               {[
-                { label: "Philosophy", value: "Design fidelity over shortcuts" },
+                {
+                  label: "Philosophy",
+                  value: "Design fidelity over shortcuts",
+                },
                 { label: "Focus", value: "Performance & accessibility first" },
                 { label: "Drive", value: "Discipline, detail, iteration" },
               ].map((item, i) => (
@@ -53,15 +63,33 @@ const AboutSection = () => {
                   transition={{ delay: 0.4 + i * 0.1 }}
                   className="border-t-2 border-primary pt-4"
                 >
-                  <p className="text-xs font-medium tracking-widest uppercase text-muted-foreground mb-1">{item.label}</p>
-                  <p className="font-display font-semibold text-foreground text-sm">{item.value}</p>
+                  <p className="text-xs font-medium tracking-widest uppercase text-muted-foreground mb-1">
+                    {item.label}
+                  </p>
+                  <p className="font-display font-semibold text-foreground text-sm">
+                    {item.value}
+                  </p>
                 </motion.div>
               ))}
             </div>
 
             <div className="flex flex-wrap gap-3 pt-6">
-              {["React", "TypeScript", "Tailwind CSS", "Zustand", "REST APIs", "JWT Auth", "Strapi", "PostgreSQL", "Vite", "Git"].map((tech) => (
-                <span key={tech} className="text-xs font-medium px-3 py-1.5 rounded-full border border-border text-muted-foreground bg-card">
+              {[
+                "React",
+                "TypeScript",
+                "Tailwind CSS",
+                "Zustand",
+                "REST APIs",
+                "JWT Auth",
+                "Strapi",
+                "PostgreSQL",
+                "Vite",
+                "Git",
+              ].map((tech) => (
+                <span
+                  key={tech}
+                  className="text-xs font-medium px-3 py-1.5 rounded-full border border-border text-muted-foreground bg-card"
+                >
                   {tech}
                 </span>
               ))}
